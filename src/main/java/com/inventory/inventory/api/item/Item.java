@@ -8,15 +8,13 @@ public class Item {
     @Id
     private String itemNo;
     private String itemDetails;
-    private int quantity;
 
     public Item() {
     }
 
-    public Item(String itemNo, String itemDetails, int quantity) {
+    public Item(String itemNo, String itemDetails) {
         this.itemNo = itemNo;
         this.itemDetails = itemDetails;
-        this.quantity = quantity;
     }
 
     public String getItemNo() {
@@ -35,11 +33,4 @@ public class Item {
         this.itemDetails = itemDetails;
     }
 
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
 }
